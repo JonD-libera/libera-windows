@@ -1,0 +1,36 @@
+Enable/disable UAC
+User Account Control (aka UAC), for the uninitiated, is a new feature included in Windows Vista which helps separate your user identity from your authority to carry out administrative actions. UAC does this by allowing you to use a user account which is an administrator (ie. a member of the local administrators group), but without every running piece of software on your desktop inheriting administrator privileges. 
+
+UAC itself will prompt you when a program requests the ability to carry out an administrative action - giving you more control over what does, and doesn't, have the ability to carry out dangerous system operations. As a limited user, UAC has some benefits too - as UAC will prompt when you try and carry out an administrative action even if you aren't an administrator, the UAC prompt can be used to allow an administrative user to enter their password when a limited user needs to carry out a privileged action or elevate a piece of software (in a similar manner to the graphical sudo in Linux).
+
+For more information on how UAC works, see http://codefromthe70s.org/vistatutorial.aspx for an excellent explanation.
+
+As UAC applies a powerful restriction to what software - and particularly malware - can do, we do not recommend you consider disabling it lightly; doing so greatly increases the burden upon you - the user - and is likely to increase the likelihood of malware and other damaging forms of software to harm your computer. If you think UAC is breaking something, carefully consider your other options (and if you discover it isn't, consider turning it back on again); chances are it isn't the problem - or that if it is, there's an easy workaround that negates turning it off entirely (try a right-click run as administrator, for instance, which should obviate the effects of UAC on a given executable). In addition, go to its Properties > Compatibility tab and check-off Run this program as an administrator.
+
+Method 1: UAC managements center
+Click Start > Control Panel
+
+Click on User Accounts and Family Safety > User Accounts
+
+Click on Turn User Account Control On or Off. If UAC asks you for confirmation, press Continue or type the password and hit Enter.
+
+Click on the checkbox and press OK.
+
+Reboot to complete
+
+Method 2: System Configuration (msconfig)
+Click Start
+
+Type into the search box (has focus by default): msconfig
+
+Wait for "System Configuration" dialog to open
+
+Click "Tools" tab
+
+Scroll down to "Enable UAC" or "Disable UAC"
+
+Click the action you want to perform, then click "Launch"
+
+Reboot to complete
+
+Note: Windows 7 UAC can be configured with more control and doesn't need a reboot.
