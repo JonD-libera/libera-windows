@@ -1,0 +1,48 @@
+Secure Boot
+This page is a work in progress. We are just getting started!
+
+There has been a lot of information, some of it misinformation or at least garbled information, about the new Secure Boot provisions in Windows 8. So let's list a few clear and verifiable facts, with links to authoritative information and corroboration:
+
+New 32/64-bit PCs will increasingly have the new style of UEFI "bios". This is an industry shift, not just a Microsoft thing.
+
+Corroboration:
+
+TomsHardware
+
+Intel
+
+Secure Boot really does add security.
+
+Corroboration:
+
+Matthew Garrett
+
+Matthew Garrett
+
+Even if you are suspicious of Secure Boot, UEFI brings tangibly real benefits over the old BIOS. Things like large disk support (>2TB), pre-boot networking, pre-boot applications.
+
+Corroboration:
+
+Intel
+
+32/64-bit editions of Windows running on normal PCs do NOT require Secure Boot enabled. The OS will run just fine without it. 
+
+Corroboration:
+
+Microsoft
+
+YouTube (Video showing how to do it.)
+
+If a PC ships ship with UEFI and a Windows logo anywhere on it, Microsoft REQUIRES that the PC owner be able to disable Secure Boot. 
+
+Corroboration:
+
+Windows 8 Hardware Certification Requirements. From Microsoft. Start on page 113 to read their very detailed requirements around UEFI Secure Boot - including the ability to disable it. 
+
+If you do not believe Microsoft, then see these articles (1, 2) from RedHat's Matthew Garrett. He has essentially reversed his original position that Secure Boot was a way take control of hardware away from the owner and put it in the hands of Microsoft and the hardware vendors. His original opinion was the one which set off so much controversy at Slashdot and so many other Linux-friendly forums. Mr. Garrett is cautious, and clearly not a big fan of MS. So his critical view of them is important - and if he has changed his view, it's worth your time to hear why.
+
+Wikipedia confirms. Secure boot can be disabled.
+
+lockdown of tablet and handset devices
+
+Ubuntu following the MS strategy.
