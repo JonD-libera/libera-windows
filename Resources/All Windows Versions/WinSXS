@@ -1,0 +1,25 @@
+WinSXS
+People keep asking why the WinSxS directory uses so much space. And how they can shrink it. 
+
+We advise you not to meddle with it manually. Here is some background material:
+
+Blog article by the Windows Servicing Guy, who says not to mess with WinSxS manually ... and why.
+
+TheWindowsClub explains WinSxS (be sure to read the whole article).
+
+This e7 blog article talks about how WinSxS takes up less space than it looks like.
+
+Win8.1 and later can now tell you the exact size of WinSxS
+
+Windows Servicing Guy says your Windows partition should be at least 40GB in size. And why.
+
+And here are the recommended ways to reclaim space in WinSxS:
+
+KB2795190 shows how to shrink WinSxS safely, on Vista and Win7 - using commandline tools.
+
+KB2852386 discusses using the gui Disk Cleanup tool to shrink WinSxS on Win7 and 2008R2.
+
+Technet article for shrinking WinSxS on Win8.1 and Win2012R2.
+
+Analyzing WinSxS on Win10 with dism.exe
+Analyzing WinSxS on Win10 with dism.exe
