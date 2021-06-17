@@ -1,0 +1,116 @@
+Windows Subsystem for Linux
+I have a feeling there's going to be a lot to say about what the WSL (also known as UoW, Ubuntu on Windows) can and cannot do. So on the day of its release to the Insider fast ring (April 6, 2016), we're starting this page.
+
+ 
+
+Build 14316 is the first public build to let you run it.
+
+It starts from within command or PowerShell terminals.
+
+It started as user feedback!
+
+MSDN Bash on Ubuntu on Windows compilation page
+
+18 minute video explaining the basics. Why, how, what.
+
+Canonical's Dustin Kirkland writes about WSL.
+
+Dustin Kirkland's hour-long Q&A video about WSL. (Note, it's not all about WSL; other Ubuntu issues are discussed as well.)
+
+29 minute video. Hanselman discusses WSL with some of the folks who made it.
+
+WSL blog currently contains one article detailing some history and architecture. More articles are promised.
+
+FAQ (experiments performed, some of which originated as questions from the channel)
+
+When I start a process in WSL - what do I see in Windows?
+
+Task manager doesn't show the process, but powershell get-process does: (image)
+
+Can WSL do this?
+
+Start a Windows process from within WSL?  No
+
+Run powershell commands from within WSL? No
+
+Browse the Windows filesystem, create, write, read and delete files from within WSL? Yes
+
+Shutdown Windows from within WSL? No   
+
+Add a user to Windows? No    
+
+apt-get install nginx? Yes  ... but I couldn't actually run it
+
+Run nano? Yes   
+
+Display man pages? Yes ..enter, spacebar, and q keys worked as I expected.
+
+List processes? Yes. Not much there!
+
+Ping an ipv4 address? No. 
+
+ssh to another host? Yes.
+
+Fetch a web page with curl? Yes. (Also demonstrates the 'head' command.)
+
+Portscan another machine with nmap? No. 
+
+Change windows file permissions with chmod? No. 
+
+It was like the chmod command did nothing at all. Permissions didn't change within WSL or when viewed by file explorer.
+
+Change file ownership with chown? No. 
+
+rm -rfv /*    ... Yes. After which WSL was totally busted; Windows was fine. Note that WSL was root, running in an elevated PowerShell. I rebooted Windows, which worked fine, and re-ran WSL, which did not work at all.
+
+rm -rfv --no-preserve-root /*  ... Yes, with mixed but fairly destructive results:
+
+Here it is cleaning out the ESD sources ...
+
+munching on my AppData ...
+
+failing to remove some imoprtant stuff ..
+
+and finally finishing with some other failures. After which Windows got stuck in a boot fail loop.
+
+Accessing WSL from Windows:
+
+Editing /etc/passwd with Notepad2
+
+Need to uninstall and reinstall WSL? (Maybe because you broke it with rm -rf experiments?)
+
+Do an lxrun /uninstall followed by lxrun /install in cmd or powershell.
+
+I discovered this in the 14328 build. image
+
+ 
+
+Additional Links to information on WSL
+
+Scott Hanselman
+
+Developers can run Bash Shell and user-mode Ubuntu Linux binaries on Windows 10
+
+Linux Command Line on Windows
+
+Installing Fish Shell on Ubuntu on Windows 10
+
+ 
+
+Dustin Kirkland
+
+Ubuntu on Windows -- The Ubuntu Userspace for Windows Developers
+
+"So maybe something like a Linux emulator?"  Now you're getting warmer!  A team of sharp developers at Microsoft has been hard at work adapting some Microsoft research technology to basically perform real time translation of Linux syscalls into Windows OS syscalls.  Linux geeks can think of it sort of the inverse of "wine" -- Ubuntu binaries running natively in Windows.  Microsoft calls it their "Windows Subsystem for Linux".
+
+HOWTO: Ubuntu on Windows
+
+Windows blog
+
+Windows Command Line Tools for Developers 
+
+Windows Subsystem for Linux
+
+Windows Subsystem for Linux Overview
+
+ 
