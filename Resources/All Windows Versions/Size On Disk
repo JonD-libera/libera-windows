@@ -1,0 +1,72 @@
+Size On Disk
+Sometimes we get asked how much disk space various versions of Windows use. 
+
+Here are the answers I got, from installing each version as a VM on a Hyper-V system. Your mileage will vary, depending primarily on which hardware drivers and software you have installed. Hibernation settings and amount of installed RAM can also have large impacts.
+
+Windows 10 Pro (fully updated on Sep 1, 2017; VMWare Workstation): 12.3GB
+
+Windows 10 Home (fully updated on Sep 1, 2017; VMWare Workstation): 12.4GB
+
+Windows 8.1 (fully updated on Nov 3, 2014): 14.3GB
+
+Windows 8 (fully updated Nov 6, 2014): 22.6GB
+
+Note that a Win8 system nags often about wanting to be upgraded to Win8.1 ... and you really should.
+
+Windows 7 Ultimate (fully updated Nov 3, 2014): 25.6GB
+
+Windows 7 Professional (fully updated Nov 5, 2014): 17.6GB
+
+Windows 7 Home Premium (fully updated Nov 7 2014): 20.4GB
+
+Windows Server 2012 R2 (fully updated Nov 4, 2012): 15.6GB
+
+"Server with GUI" option chosen
+
+Windows Server 2012:
+
+Windows Server 2008r2 (fully updated Nov 11, 2014): 18.8GB
+
+Windows Server 2008:
+
+Vista Ultimate (fully updated Dec 6, 2014): 25.9GB
+
+Windows XP Professional (fully updated on Nov 3, 2014): 7.03GB
+
+Note that XP is no longer supported, and nags often to remind you of this!
+
+Windows XP Home:
+
+Note that XP is no longer supported, and nags often to remind you of this!
+
+Method:
+
+Install each OS version from TechNet media, choosing all defaults during the install. 
+
+64bit versions of the OS were used unless otherwise noted.
+
+Each VM was given 2GB of RAM.
+
+Perform Windows Updates, including all Critical, Important, and Optional updates until there are no more to be found. 
+
+Aactually I hid and did not install "Windows Live Essentials" and the "Bing Bar".
+
+Run winver and get properties of C: drive, take a screenshot of these and add it to the web page below.
+
+Document date and "used space" in list above.
+
+Note that no additional software is installed.
+
+Screenshots of each:
+
+
+
+Windows 8.1, with all updates, Nov. 3, 2014.
+Windows 2012 R2 Disk space, fully updated Nov 4 2012
+Windows 8 disk space. Fully updated Nov 6 2014
+Windows 7 Ultimate, Nov 3 2014
+Win7 Professional. Fully updated Nov 5 2014
+Win7 Home Premium, fully updated Nov 7 2014
+Windows 2008R2 Nov 11, 2014
+Vista Ultimate 64-bit, fully updated Dec 6, 2014
+XP Professional disk space used, Nov 3 2014
