@@ -1,0 +1,28 @@
+Assertions of "Spying"
+Lately we're hearing a lot of assertions that Windows "spies on you". We think this claim is foolish nonsense, mainly brought about by the kinds of websites whose real goal is to get you to click on ads for "One weird old trick to lose belly fat".
+
+An experiment: in the search engine of your choice, try these search phrases: "google spies", "apple spies", and "microsoft spies". Or change that to some other random company. Maybe not even a technology company; I (mota) was surprised at the results returned from the search phrase "coca-cola spies".
+
+I won't even suggest how you might interpret the results of this experiment; just think about it for a moment or two. 
+
+Our experience is that the alarmist web articles usually base their claims on a misunderstanding (or worse, intentional misrepresentation) of one or more of the following documents:
+
+Microsoft Privacy Statement
+
+Microsoft Services Agreement
+
+Configure Windows Telemetry In Your Organization
+
+Privacy and Windows 10
+
+A Case Study of Logging and Telemetry at Microsoft (research paper discussing how the data is used)
+
+If, after checking the claims against these sources, you still want to discuss this so-called "spying" in the ##windows channel, be ready to do so in a calm, polite, and (I can't stress this enough!) factual and specific manner. Bring verifiable evidence. We're open-minded, but repeating unverifiable claims just isn't enough, and smacks of intentional trolling, which we have had quite enough of.
+
+Revealed! The crucial detail that Windows 10 privacy critics are missing
+
+When it comes to Windows 10 privacy, don't trust amateur analysts
+
+Windows 10 telemetry secrets: Where, when and why Microsoft collects your data
+
+Thanks!

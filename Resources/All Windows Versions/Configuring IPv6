@@ -1,0 +1,175 @@
+Configuring IPv6
+My ISP (Comcast) natively supports IPv6, so I recently went on a mission to make my local network fully support it, too. In the process I learned a few things, so I thought I'd share. Tunneling and router configuration are out of scope for this document, which only addresses basic configuration of IPv6 on Windows hosts. 
+
+Powershell v4 is used throughout this guide. There are other ways to do these things but I have chosen Powershell for these examples ... as a matter of personal taste I guess.  PSv4 is native to Windows 8.1; if you are running a lesser version of WIndows you can get PSv4 here.
+
+First, test that you have basic IP connectivity by running the following commands:
+
+Get-NetIPConfiguration
+
+Clear-DnsClientCache
+
+Test-Connection 8.8.8.8
+
+Test-Connection www.google.com
+
+
+ 
+
+Here we see the results you are aiming for:
+
+The NIC has proper IPv4 and v6 addresses.
+
+Default gateways exist for both v4 and v6.
+
+There are both v4 and v6 DNS servers configured.
+
+Test-connection returns good results by IP and by name.
+
+ 
+
+If you are not getting good results from the above tests, verify settings:
+
+Is IPv6 enabled on your active NIC?
+
+Check with this command:
+
+Get-NetAdapterBinding -DisplayName *6*
+
+If the result (for your preferred NIC) is False, then you can enable IPv6 with this command:
+
+Set-NetAdapterBinding -Name yourNICname -DisplayName *6* -Enabled $true
+
+Here's an example:
+
+
+Does your preferred NIC have properly configured IPv6 address and gateway?
+
+Fix router announcements.
+
+Procedure for this will be specific to your router.
+
+Or configure the settings locally on your PC:
+
+New-NetIPAddress -InterfaceIndex 12 -IPAddress 2601:8:b800:25b::12 -PrefixLength 64 -DefaultGateway 2601:8:b800:25b::1
+
+To remove an IP address you have set in this way:
+
+Remove-NetIPAddress -IPAddress 2601:8:b800:25b::12
+
+To remove the default gateway added in the above New-NetIPAddress command:
+
+Remove-NetRoute -NextHop 2601:8:b800:25b::1
+
+Does your preferred NIC have proper DNS Server configuration?
+
+Fix router announcement and/or DHCPv6.
+
+Procedure for this will be specific to your router.
+
+See the section"IPv6 autoconfiguration, DNS, and Windows" below.
+
+Or configure the settings locally on your PC:
+
+Set-DnsClientServerAddress -InterfaceIndex 12 -ServerAddresses ("2601:8:b800:25b::3","2601:8:b800:25b::2")
+
+To remove these and return to the settings handed out via NDP or DHCPv6:
+
+Set-DnsClientServerAddress -InterfaceIndex 12 -ResetServerAddresses
+
+ 
+
+ 
+
+IPv6 autoconfiguration, DNS, and Windows
+
+ 
+
+There are a number of details involved with IPv6, but I'll try to make it simple. To reliably exchange data with other hosts on your LAN and on the internet, a computer really only needs four bits of configuration data. Here's a table showing these, and their typical sources. In this table, NDP means Neighbor Discovery Protocol.
+
+ 
+
+
+ 
+
+A few other key points: 
+
+Link-Local IPv6 address
+
+Is built and tested for uniqueness by the OS.
+
+You should never have to configure one yourself.
+
+Always starts with the reserved fe80:: prefix.
+
+A link-local address is all you actually need to talk to other hosts on your LAN.
+
+Routable IPv6 address
+
+Necessary to talk to hosts outside your LAN (the internet!).
+
+Should be within a subnet assigned to you by your ISP.
+
+Gateway IPv6 address
+
+Should be a link-local address obtained from the router, via Router Announcement (RA).
+
+Optionally you can configure one yourself, but if you have to, something else is broken.
+
+Cannot come from DHCPv6.
+
+DNS Server's IPv6 address
+
+Necessary for name resolution. Example: resolving "www.google.com" to its IPv6 address of 2607:f8b0:400a:802::1010
+
+Windows can't "hear" DNS Server IPv6 address when delivered via Router Advertisements (RAs) via NDP.
+
+ 
+
+Did you catch that last bit? Windows hosts cannot receive DNS Server config information via RFC 6106 compliant RAs - a process sometimes called RDNSS. (Some citations: 1, 2, 3.)
+
+ 
+
+Because of this, you'll have to find another way to configure IPv6 DNS on your Windows hosts. There are a few options here:
+
+ Configure DNS on all Windows hosts manually.
+
+Which is fine if you only have a couple of them, but rapidly gets annoying if you have more.
+
+Have your router send the "M" flag in its RA's, and run a DHCPv6 server which assigns IPv6 addresses and DNS configuration data.
+
+The M flag is actually configured within "Neighbor Discovery Protocol" (NDP).
+
+It stands for "Managed" and there are some advantages to using this approach:
+
+Like with DHCPv4, you can decide exactly which addresses will be used. Autoconfigured v6 addresses tend to be pretty random.
+
+Your DHCPv6 server maintains a list of all address leases, giving you a better view on how many hosts there are on your network. And an easier way to discover them all.
+
+DHCP reservations.
+
+DHCP in general is familiar to those of us who have been administering networks.
+
+Have your router send the "O" flag in its RA's, and run a DHCPv6 server which is only responsible for providing DNS configuration data.
+
+The "O" stands for "Optional Configuration" and basically it means your IPv6 hosts will auto-configure their addresses via NDP, but they'll also ask DHCPv6 for any additional config parameters they may need ... DNS being an important one.
+
+Benefits:
+
+Simpler configuration.
+
+Less chance of DHCP-related problems such as exhausted scopes.
+
+ 
+
+ 
+
+Some reference links:
+
+IPv6 Autoconfiguration in Windows Vista
+
+Microsoft's Christopher Palmer answers a question about RFC 6106 compatibility
+
+IPv6 Support in Windows 8 and Windows Server 2012 (by John Howie of WindowsITPro)
+
+Christopher Palmer: "No version of Windows supports RFC 6106" 

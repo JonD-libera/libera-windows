@@ -1,0 +1,15 @@
+Windows XP/2000 Simple File Sharing
+We don't pretend to understand why Microsoft did this, but it seems that Simple File Sharing (SFS) (explained in more detail here and even better here) is the default on a lot of copies of XP Pro. And when SFS is enabled, you get no Permissions tab when viewing properties of files and folders in Explorer. We think that's dumb. Fix it this way:
+
+On the Start menu, rightclick My Computer and choose Open.
+
+Select the Tools menu and choose Folder Options.
+
+Click the View tab.
+
+In the scrollable Advanced Settings box, scroll down to the bottom.
+
+Remove the checkmark next to Use simple file sharing,  as shown:
+
+
+If you are running XP Home Edition, see this link. Basically you need to boot XP Home Edition to Safe Mode before you can see the Permissions tab.

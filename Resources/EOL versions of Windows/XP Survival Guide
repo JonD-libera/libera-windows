@@ -1,0 +1,20 @@
+XP Survival Guide
+So you're determined to keep running XP, in spite of that fact that it's no longer supported. In spite of multiple good reasons to upgrade. 
+
+Okay. 
+
+Here are some things you'll really need to do:
+
+Get serious about backups. No kidding. Back up your data now, before even thinking about doing anything else. If you still create data you care about on the XP system, work out a system for regularly updating your backups. Strongly consider storing the data in some way that will not require a running XP system to access the data. Think about online backup systems like Crashplan, Mozy, Backblaze, Carbonite and the like.
+
+Don't bury your head in the sand - this is a must. As the system goes further and further out of support, it's going to be harder and harder to find the tools and skills necessary to resurrect a busted XP system. And the system will break. It's only a matter of time.
+
+Run the system nonadmin. Really. It was a great idea before EOL; it's pretty much mandatory now.
+
+Run a modern, supported, continually updated web browser. We suggest Google Chrome.
+
+Run a modern, supported, continuously updated AV package. We suggest Microsoft Security Essentials.
+
+Microsoft will also stop providing Security Essentials for download on Windows XP on this date(April 8, 2014). (If you already have Microsoft Security Essentials installed, you will continue to receive anti-malware signature updates for a limited time, but this does not mean that your PC will be secure because Microsoft will no longer be providing security updates to help protect your PC.)
+
+Page is a work in progress. We're just getting started.

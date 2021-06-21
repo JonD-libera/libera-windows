@@ -1,0 +1,18 @@
+Reinstall Windows
+Reinstalling Windows is probably easier than you think.
+
+Your PC almost certainly came with reinstallation media. This usually takes the form of a special partition on the hard disk. PC makers often customize the reinstall process, so check your PC's documentation for specifics on how to begin reinstallation. Don't forget to back up your important data first!
+
+Be aware that many vendors are known to include "crapware" with new PCs. And the vendor's reinstallation procedure usually reinstalls all that crapware. So you may wish to avoid the crapware by performing your reinstall from clean media which includes only Windows.
+
+Some resources:
+
+Microsoft's Software Recovery page for Windows 7 reinstall media
+
+Ed Bott says this only works with retail keys, not OEM ones. Let us know if you find otherwise.
+
+Microsoft's Installation Media page for Windows 8.1
+
+Ars Technica guide to clean installation of Windows 8.1
+
+Paul Thurrott guide to clean install of Windows 7

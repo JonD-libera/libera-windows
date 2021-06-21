@@ -1,0 +1,40 @@
+Dualboot issues
+I (quux/mota) see a *lot* of people coming into ##windows with dualboot questions and/or problems. It's one of the most popular issues in the channel.
+
+Personally, I gave up dualboot years ago.  Even an OS designed for dualboot may not be able to detect every other possible OS correctly and do the right thing. So all the knowledge that's out there is basically learned from trial-and-error, hacking away (and rebooting a lot) until things finally work. Some people think that's fun. I don't. Even when you get it working right, you still have to reboot every time you want to switch OS's. That's just too much rebooting, in my opinion!
+
+ 
+
+So, several years back,  I broke down and  bought a copy of VMware Workstation ($189 USD) and some extra RAM, and it's one of the smartest computer investments I have made. Now I can run other OS's at will (and I do run quite a few of them for various reasons), and I never have to deal with the pain and anguish of dual boot.
+
+But if you're reading this, you're probably determined to dual boot. OK ... but if you have not done so already, back up all important data before embarking on the dualboot path - you'll be glad you did. 
+
+That said, here are some resources:
+
+How to Dual Boot Windows and Linux - (using LILO)
+
+How to dual-boot Windows NT/2000/XP and Linux using NTLDR
+
+Microsoft's Multiboot Page
+
+This page documents the exact Windows XP bootup process. (Retrieved from the Wayback Machine, still useful to some.)
+
+about.com's page of dualboot links
+
+Prevention and Recovery of XP Dual Boot Problems (redhat.com)
+
+Need a quick Windows boot floppy to repair your broken MBR? Try bootdisk.com
+
+... or check out this MBRfix program!
+
+This MBR reference could be better written, but has a lot of good info.
+
+How Windows 2000 Assigns, Reserves, and Stores Drive Letters (applicable to XP, Vista, and 7 as well)
+
+Referencing Hard Drive Partitions.
+
+This 8-step boot repair process has worked for many XP systems.
+
+That's all for now. 
+
+-quux/mota (but please don't ask me about dual boot/MBR stuff: I swore it off! Maybe someone else can help you...)

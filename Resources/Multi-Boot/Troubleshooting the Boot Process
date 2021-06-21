@@ -1,0 +1,75 @@
+Troubleshooting the boot process
+by mota
+
+This page is a work in progress. Please help me improve it by pointing out errors and omissions. Also by letting me know of any authoritative resources on this topic. Please, I'm begging you: email me!  mota@freenode-windows.org 
+
+We see quite a few questions related to the boot up process (especially in multi-boot scenarios). So I thought it would be a good idea to start a page on troubleshooting it. 
+
+Because I think that the best troubleshooting tool is an understanding of how things work, I will start with a flowchart that gives an overview of the complex and hacky boot process. This first draft covers only the Windows MBR-type boot process. Later I hope to add information covering GRUB, LILO, and UEFI/GPT processes. 
+
+
+Resources:
+
+Gustavo Duartes: How computers boot up
+
+Pádraig Brady: Details of GRUB on the PC
+
+Simon Kitching: Booting Linux on x86 using Grub2
+
+Wikipedia: Master boot record
+
+Links I have collected but not yet fully assimilated:
+
+Microsoft: Modify the BCD Store Template
+
+Microsoft: BCDEdit Command-Line Options
+
+Microsoft: Bitlocker hardware and software requirements
+
+Microsoft: How Windows 2000 Assigns, Reserves, and Stores Drive Letters
+
+Microsoft: Order in Which MS-DOS and Windows Assign Drive Letters
+
+Microsoft: Definitions for system volume and boot volume
+
+Microsoft: What are system partitions and boot partitions?
+
+Microsoft: Windows NT Boot Process and Hard Disk Constraints
+
+Microsoft: Intel x86bBased system boot sequence and files
+
+Microsoft: Troubleshooting the startup process
+
+Microsoft: The Windows 7 Boot Process (sbsl)
+
+Microsoft: Delivering fast boot times in Windows 8
+
+Microsoft: Windows On/Off Transition Performance Analysis
+
+UEFI.org: Windows Boot Environment (discusses windows boot sequence under UEFI)
+
+Ubuntuforums: Grub Basic Troubleshooting Checkpoints/Flow Chart
+
+Erich Boleyn: GRUB Technical Info
+
+Steve Litt: Grub From the Ground Up
+
+Oracle: GRUB Based Booting (Reference) (really these are old solaris docs)
+
+Gnu: GRUB Manual 1.99 (far more of a howto than a technical 'how it works' doc)
+
+Ubuntu.com: Grub2
+
+Wikipedia: Windows Vista startup process
+
+Stoic Joker: Understanding the Boot Process
+
+Paul Krzyzanowski: Booting an Operating System
+
+Intel: EFI and UEFI
+
+Wikipedia: Unified Extensible Firmware Interface
+
+Mark Russinovich: Fixing Disk Signature Collisions
+
+Overclock.net: Windows: The Startup and Shutdown Process

@@ -1,0 +1,74 @@
+Download Windows ISO image
+We often see people coming to the channel and asking where they can download a copy of Windows. Whether for repair, reinstallation, or some other purpose, it's a common and completely understandable request. However, we will not link you to any download source unless we're sure Microsoft has clearly endorsed that source. To understand why, see the longer discussion on our no-piracy page.
+
+If you've lost or failed to create your own reinstall media, we empathize, but we're not accepting blame. Complaining about it in channel is a waste of everyone's time.
+
+Official, downloadable Windows install tools:
+
+This page includes download links for Win10, Win8.1, and Win7. Below are some older links for each OS, we need to recheck them all:
+
+Windows 10: Official Windows 10 media creator tool. (For the current general release version.
+
+Be sure to read the relevant sections at the bottom of the page for important advice on using this tool, which must be run from a working Windows installation.
+
+For an ISO download, use this link.
+
+Insider Preview versions of Win10 are here.
+
+To reinstall Windows 10, consider the Recovery Options, including Reset.
+
+Windows 8.1 installers are available on this page. 
+
+You'll have the option to install Windows now, or creating media from an ISO file.  Note this is a tool that needs to be run from Windows, and your product key is required.
+
+A Windows 8.1 ISO image may be directly downloaded here.
+
+Windows 8.1: you can use this tool to create install media. Or you can create a USB recovery drive. 
+
+When re-installing, don't forget Win8/8.1 have built-in functions to restore, refresh or reset.
+
+Windows 7:  Official Windows 7 download (requires a retail activation key).
+
+Vista: We're unaware of any official download sources. You might try contacting MS support.
+
+EDU Media downloads
+
+Some less direct alternatives:
+
+If your copy of Windows came with a device or PC you bought, contact the OEM who made it. They'll almost certainly have a process for media replacement.  You can generally find the procedure with a search on "CompanyName recovery media"
+
+Dell Recovery Media
+
+HP Recovery Media
+
+Toshiba Recovery Media
+
+If that OEM is out of business, you can use Microsoft's replacement media procedures.
+
+If you purchased from an online vendor such as the Microsoft Store, they may be able to provide a new download for you.
+
+If you're just looking to try Windows or other Microsoft products, check out free trials from MS TechNet Evaluation Center.
+
+Sign up for one of Microsoft's subscription services such as MSDN or Action Pack.
+
+Alternative approaches, not for everyone.
+
+If you are wanting to test Internet Explorer versions, the IE Team makes virtual machines available. Many VM platform images are available here.
+
+Various evaluation versions for Windows Server can be downloaded here including free Hyper-V Server
+
+Tools to create ISOs
+
+Rufus
+
+Windows 7 USB Download Tool - and this fix to work with any ISO.
+
+If you are not on Windows, a #Ubuntu op says they recommend WinUSB but don't support it in their channel because, you know, Windows. Also the tool WoeUSB has been mentioned however we don't support it in ##windows because, you know, Linux.  Good luck.
+
+Whatever you do, please don't use the channel to present or argue about non-Microsoft sources. If you believe you know of a Microsoft approved source we have not documented here, please privately message any channel operator. 
+
+Please be clear on our intent here. We obviously cannot stop you getting media from unapproved sources - we think it's risky and unethical, but that's your business, not ours. We're simply saying that in our IRC channel, we disallow talk of software sources without confidence that those sources are legal and proper. 
+
+Frankly we think this is harder than it needs to be, and we wish Microsoft and OEMs had a clear and easy system for replacement media in all situations. But we do not want to help people create potential problems for themselves, so we are stuck with this - for now.
+
+Thanks to Thrae for inspiring this page.

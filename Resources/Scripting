@@ -1,0 +1,111 @@
+Scripting
+If you're just getting started with scripting on Windows, we highly recommend PowerShell. Here are some things to consider when choosing a scripting environment:
+
+If you want a good overview of how to dig into and use PowerShell, watch the PowerShell Unplugged videos.
+
+On Freenode, check out #powershell
+
+Learning PowerShell
+
+5 Cmdlets to Get You Started with PowerShell (see the Powershell Unplugged video below for more depth on these)
+
+Getting Started with PowerShell 3.0 Jump Start - Almost 5 hours of video arranged as a full-day online training course on Microsoft Virtual Academy presented by Jeffrey Snover, the inventor of PowerShell, and Jason Helmick, Senior Technologist at Concentrated Technology.
+
+Advanced Tools & Scripting with PowerShell 3.0 Jump Start - Almost 5 hours of video arranged as a full-day online training course on Microsoft Virtual Academy presented by Jeffrey Snover, the inventor of PowerShell, and Jason Helmick, Senior Technologist at Concentrated Technology.
+
+TechNet 2012 - Turn PowerShell Commands into Reusable CLI and GUI Tools - Don Jones presents building a reusable function leveraging many built in PowerShell capabilities including the use of Write-Debug, Write-Verbose and building an object from multiple data sources that can be piped to other cmdlets.
+
+PowerShell Unplugged
+
+Sessions given by Jeffrey Snover on how to explore PowerShell and discover commands and ways to do things.  Mostly they follow a similar theme but often a focus on the newer capabilities from that year and are an entertaining way to learn how to explore PowerShell.
+
+Ignite 2016 - Windows PowerShell Unplugged with Jeffrey Snover - 10 years now.
+
+Ignite 2015 - Windows PowerShell Unplugged with Jeffrey Snover - Contains some mention of v5, editing features, etc.
+
+TechEd 2014 - Windows PowerShell Unplugged with Jeffrey Snover - Lot of focus on v4
+
+TechEd 2013 - Windows PowerShell Unplugged - 78 minute video by Jeff Snover, Powershell's inventor. Mr. Snover's genius makes this video excellent as an introduction to Powershell, yet simultaneously interesting and valuable to experienced Powershell users. 
+
+PowerShell Versions
+
+If you're not running Win10, you very probably have an older version of PowerShell.  This is fine for basic needs, but there's no reason not to be running the latest version. As of this writing, that's PowerShell v5. It works great on Win7 and all newer versions of the OS. PowerShell is delivered as part of the Windows Management Framework (WMF) package.
+
+v5 requires .NET 4.5 or later. It turns out that checking the installed versions of .NET can be a complex process, so our advice is to simply run the installer for .NET version 4.6 ... if you already have it, no harm done. Once that's done, download and run the WMF5 installation package. You will have to reboot after doing this.
+
+Note, the WMF5 requirements page said that WMF4 was a prerequisite. But I had no problem taking a stock Win7 installation from PS v2 to v5 in one jump.
+
+You can check which version of PS you have by getting the contents of the $PSVersionTable variable. From within PowerShell of course!
+
+PowerShell reference links
+
+Scripting Guys blog posts on using VSCode with PowerShell
+
+PowerShell Reference - MSDN PowerShell reference pages.
+
+PowerShell Survival Guide - Community maintained resource page with a massive amount of links.
+
+PowerShell Style Guide - Community maintained PowerShell script style guide.
+
+Here's Jeffrey Snover discussing the influence of Unix tools on PowerShell:
+
+"We tried to use Unix tools first. But that didn't work, because Unix is file/document oriented; Windows is API oriented. 
+
+ 
+
+So when I got bash and awk and sed and grep available on Windows, it didn’t help that much, why? Awk doesn't work against the registry, grep doesn't work against WMI, and SED doesn't work against AD. In Unix, those text manipulation tools are management tools … but on Windows they're just text manipulation tools and there's not much text, so it didn’t help.
+
+ 
+
+So we had to invent our own stuff. We wanted to invent as little as possible, so we leveraged a lot of the concepts of Unix. But Unix has weaknesses as well. So this is an area where we looked more to VMS DCL or the AS400. They have very good production oriented environments and they were extraordinarily regular  (consistent) in their environments, which is to say that you had verb-noun and this well-defined set of parameters."
+
+ 
+
+The above quote is considerably truncated, to get just the main point across. Watch Mr. Snover explain his thinking. Or read his similar answer on ServerFault.
+
+Other Scripting resources
+
+As of Windows Vista and Windows Server 2008R2, PowerShell (codename Monad) is installed by default. 
+
+PowerShell is extremely robust and capable. It's based on .NET and is easily extensible.
+
+Microsoft have identified this as the CLI of the future.
+
+*nix people tend to like PowerShell's use of common command aliases like ls, pwd, and so on.
+
+Systems prior to Vista and Win2008R2 do not have PowerShell installed by default. PowerShell v2 can be installed on Windows XP, Service Pack 3 ... but you're not running an unsupported OS, are you? Really?
+
+WSH/VBScript work on a variety of Windows versions.  They scripting engines haven't been updated in over 10 years and exist in newer Windows for only for compatibility.
+
+It's far more readable and long-term maintainable than CMD scripts.
+
+Finally, CMD (often improperly called "DOS") is more powerful than many give it credit for. 
+
+But its syntax is not very readable to modern users. 
+
+CMD, though deprecated and no longer under active development, is native to every version of Windows you might encounter. (Exception: Windows Phone.) 
+
+We suggest CMD as your last scripting resort for anything other than quick one-off scripts.
+
+Non-native scripting environments are another way to go. Python (#python)and cygwin (#cygwin) come to mind. 
+
+But remember the added overhead: you have to install them everywhere you want them to work. That's fine for one computer (yours!), but it quickly becomes a drag if you're managing multiple systems.
+
+We see a lot of Linux folks gravitate to packages like cygwin, unxutils, or gnuwin32. We don't deny that a lot of productive work can be done via these packages, but we warn that there is a subtle trap involved here. Adding a Linux-like shell on top is never going to fully paper over the differences between Windows and Linux. The more you attempt to avoid these differences (by remaining in the comfortable cygwin zone) rather than learning and understanding them, the more frustrated you are going to be when said differences unavoidably impact your usage scenarios. So, without claiming that either the Linux Way or the Windows Way is the better way, we suggest that you actually learn the Windows Way, if you plan to be using Windows often. It may be painful at first. But in the long run, it will save you a lot of trouble and misunderstandings.
+
+ 
+
+Scripting references
+CMD: SS64.com, Microsoft, VanderWoude, DosTips.
+
+The gold standard dead-tree book on the CMD scripting is: Windows NT Shell Scripting
+
+WSH/VBscript: SS64.com, Microsoft, VanderWoude
+
+Powershell: SS64.com, Microsoft, Scripting Guy
+
+Check out freenode's #powershell channel (and their website) while you're at it.
+
+The MS Script Repository has a lot of script examples. Powershell, vbscript, cmd, and more.
+
+ 
