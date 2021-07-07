@@ -1,33 +1,3 @@
-Staff Bios
-Each staff operator writes his own bio.
-
- Chanop
-
- 
-
- Something written by the chanop
-
-Local time zone
-
-Eastern
-
-Eastern
-
-Pacific
-
-Eastern
-
-Greenwich (or BST)
-
-Greenwich (or BST)
-
-Australian Eastern
-
-Pacific
-
- CET
-
-
 On August 20, 2016 Bryan Lockwood, known as mota, passed away unexpectedly.
 
 He will be missed.
