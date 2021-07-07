@@ -1,0 +1,68 @@
+svchost
+We often see questions about svchost.exe. Usually these questions come from someone looking at a list of running processes, like this Resource Monitor (resmon.exe) screenshot (click on this or any other image on this page to enlarge):
+
+Resource Monitor on Win81 showing svchost processes
+A few concepts summarized:
+
+A 'service' under Windows is a process that runs whether or not a user is logged in (like a 'daemon' on Unix-ish systems).
+
+Services handle background tasks such as DNS resolution, Windows Updates, malware protection, and so on.
+
+A typical Windows install has a lot of services. My Windows 8.1 Pro system has 197 services right now, and I pretty rarely install things.
+
+Prior to Windows 2000, each service ran in its own individual process.  
+
+Starting with Windows 2000, many (but not all) services were collected to run together under single instances of a svchost.exe process. This selective grouping greatly reduces the amount of memory consumed. 
+
+The services themselves are instantiated by calls made to their dynamic-linked libraries (commonly called DLLs).
+
+Each svchost grouping runs in a specific security context. 
+
+These groupings can be edited in registry under the key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost. This is not recommended!
+
+OK, but which service is hogging my CPU?
+
+The most common frustration with this system is that when a particular instance of svchost.exe starts showing up in Task Manager as using a lot of CPU time, people want to know which service is actually responsible for this. To find out, open Resource Monitor as shown in the screenshot at top of this page. Click the checkbox next to the service you are concerned about, then expand the "Services" bar, as shown below:
+
+Resource Monitor breaking out services in a svchost instance
+A few things to notice: 
+
+For this screenshot, I made sure that the Windows Update service (wuauserv) was moderately busy. It's using 17% of CPU.
+
+Under the "Services" bar, each of the services within this instance of svchost is listed by name and description. CPU utilization for each service is shown. 
+
+From Resource Monitor we can't easily isolate the disk, memory, or network utilization of a specific service DLL within a svchost process. For that, it's better to isolate the service into its own svchost/group as detailed here.
+
+Finally, high CPU utilization by a service is rarely a bad thing. Some services do perform occasional chores than can run at 50% (or more) of CPU for short periods. As long as CPU queue length is less than 10 (per CPU), no process is bottlenecked by CPU. 
+
+Security Concerns
+
+Malware often tries to pose as svchost.exe. We can usually spot this in Task Manager. Find the svchost instance you identified in Resource Monitor by matching the Process ID (PID). Right-click it and select "Properties":
+
+Win81 Task Manager, getting properties of svchost instance
+With that done you'll have the Properties dialog open. It has multiple tabs; the image below shows three of them side by side:
+
+Windows 81 Task Manager properties of a svchost instance
+Things to notice here:
+
+On the "General" tab (far left), we see the location of this svchost executable. 
+
+If it is not in your Windows\System32 directory, it's badware.
+
+On the "Digital Signatures" tab (middle), we see that it does have a signing certificate attached.
+
+Good! If it does not have a signing certificate, it's badware.
+
+You can click the "Details" button and further inspect the certificate.
+
+On the "Details" tab (far right) we see various information about the process. 
+
+Be highly suspicious of processes (especially elevated processes) which fill in few or none of these values.
+
+References:
+
+Microsoft: What is svchost.exe, and why do I have so many instances of it?
+
+Scott Hanselman: Figuring out why my SVCHOST.EXE is at 100% CPU without complicated tools in Windows 7
+
+Microsoft: Getting Started with SVCHOST.EXE Troubleshooting

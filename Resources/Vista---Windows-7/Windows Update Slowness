@@ -1,0 +1,50 @@
+Windows Update Slowness
+We've heard a number of people report that Win7, when freshly installed, take a long time and a lot of memory to apply the first round of updates. The 'check for updates' part of the sequence taking more than 30 minutes ... in some cases several days!
+
+This is due to a bug* in Windows Update (WU), which causes the processing ("checking" or "searching")  stage to take far too long, when there are a great many updates to process. The bug is resolved with the new WU client delivered in the KB3172605 update. However, the bug still applies while you are installing KB3172605, making it take a long time ... unless you use this procedure.
+
+The procedure below is the result of a lot of experimentation. It is the speediest way we have yet found, for getting Windows fully updated.
+
+A trick we have learned:
+
+Download the appropriate (x64 or x86) versions of these three updates: KB3020369, KB3172605, and KB3125574.
+
+Microsoft Update Catalog links: KB3125574, KB3172605, KB3020369
+
+Disconnect from computer from the internet to stop the following steps from searching online for updates
+
+Open an elevated PowerShell prompt and run the following commands, which will allow the next updates to install quickly:
+
+stop-service wuauserv
+
+remove-item c:\windows\softwaredistribution\WuRedir
+
+Double-click and run the KB3020369 update (previously downloaded). Should take less than 2 minutes to run, and will not require a reboot.
+
+Now double-click the KB3172605 update you previously downloaded. Follow the prompts. Reboot when it says to. (This step should take about 1 minute).
+
+Double-click and run the KB3125574 update (previously downloaded). Should take about 12 minutes to run. It will require a reboot that takes 5 minutes to complete. 
+
+Begin WU (Windows Update) after completing the above steps. A list of 60+ available updates should be returned within 5 minutes.
+
+Finish updating normally ... rebooting when it says to. You will probably need to reboot and re-check for updates at least two more times.
+
+In my own tests, using this method, I was able to take a Win7 SP1 Ultimate (64bit) system from fresh installed to fully updated in about 1.5 hours. The WuRedir directory (which I remove in step 2) will be rebuilt by Windows along the way, and the WU service will be restarted on its own.
+
+For other WU issues, start with this omnibus troubleshooting article.
+
+Fix Windows corruption errors by using the DISM or System Update Readiness tool
+
+Some folks advocate using wsusoffline, which requires some preparation work. Of you may be interested in this PowerShell Windows Update Module. Or this other one called PSWU.
+
+We hope to add more to this article. Please send suggestions to mota.
+
+*Microsoft have not formally said much about this bug. I was tipped off when I heard Microsoft Premier Field Engineer Clint Huffman talk about it in this podcast.
+
+A possible alternative
+
+Microsoft released a convenience rollup (certainly not a service pack) See post for details.  Read all of it, the details, the pre-req's etc before starting.  We haven't tested this approach.
+
+Simplifying updates for Windows 7 and 8.1
+
+Article on applying it from howtogeek
