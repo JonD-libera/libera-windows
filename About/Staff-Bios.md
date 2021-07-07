@@ -23,7 +23,8 @@ I live in the Eastern US and am generally online between 0530-2100 Eastern time.
 
 I can be reached at jsimpson@fosscon.us
 
-## Mathisen
+## Mathisen (Scandinavia)
+I came to windows around 7 years ago, and I found the channel to be a great way to stay up to date with various windows solusions and  problems. became a part of the op team around a year ago. (as of 2021).
 
 ## pinPoint
 
