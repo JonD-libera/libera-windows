@@ -9,6 +9,8 @@
           margin: 0;
           background: #1bc2a2;
           overflow: visible;
+          position: relative;
+          z-index: 10000;          
         }
 
         ul li {
@@ -17,6 +19,8 @@
           float: left;
           background: #1bc2a2;
           overflow: visible;
+          position: relative;
+          z-index: 10000;          
         }
         li ul { display: none; }
 
@@ -48,6 +52,8 @@
           left: 100%;
           top: 0;
           overflow: visible;
+          position: relative;
+          z-index: 10000;          
         }        
 
         ul:before,
@@ -55,6 +61,8 @@
           content: " "; /* 1 */
           display: table; /* 2 */
           overflow: visible;
+          position: relative;
+          z-index: 10000;          
         }
 
         ul:after { clear: both; }
