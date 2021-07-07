@@ -1,3 +1,9 @@
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+## Mota
 On August 20, 2016 Bryan Lockwood, known as mota, passed away unexpectedly.
 
 He will be missed.
@@ -6,18 +12,14 @@ mota was originally known as quux, and pretty much founded the ##windows channel
 
 The nick mota is atom spelled it backwards.  Someone else his old "quux" nick now.
 
-mota
-
-
- I came to ##windows around 2006 looking for help, and over time got more involved in helping others. In time, I joined staff myself.  Presently, I'm running the channel with the help of the rest of our crew.  I'm additionally part of the staff that runs freenode itself, and coordinate a number of foss events and meetups.
+## JonathanD 
+I came to ##windows around 2006 looking for help, and over time got more involved in helping others. In time, I joined staff myself.  Presently, I'm running the channel with the help of the rest of our crew.  I'm additionally part of the staff that runs freenode itself, and coordinate a number of foss events and meetups.
 
 I live in the Eastern US and am generally online between 0530-2100 Eastern time. (1030-0200 GMT. Be aware our daylight savings days are different.)  The best time to reach me is early in the morning, right around 0530-0700)
 
-I can be reached at jonathand@freenode-windows.org
+I can be reached at jsimpson@fosscon.us
 
- 
-
- I started attending freenode back around 2002-2003 mainly because of the phpBB project. Later on, I participated in the windows channel and the freenode channel. Lilo asked for me to join staff, I accepted. Many months passed, I descended(life stuff) to a regular user, continued to assist(windows).  Nowadays you can find me wandering other good chans. -- photography, phpBB, wordpress, nginx, security, owncloud, networking.
+I started attending freenode back around 2002-2003 mainly because of the phpBB project. Later on, I participated in the windows channel and the freenode channel. Lilo asked for me to join staff, I accepted. Many months passed, I descended(life stuff) to a regular user, continued to assist(windows).  Nowadays you can find me wandering other good chans. -- photography, phpBB, wordpress, nginx, security, owncloud, networking.
 
 I am GMT -7/-8 depending on the time of year. :)
 
