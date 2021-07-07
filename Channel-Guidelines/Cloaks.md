@@ -1,4 +1,5 @@
-Cloaks
+# Cloaks
+
 Can I get a ##windows cloak?
 We're happy to award about/windows/regular/nickname cloaks to channel regulars who abide by our channel guidelines. 
 
