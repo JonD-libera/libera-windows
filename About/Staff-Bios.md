@@ -7,6 +7,8 @@ mota was originally known as quux, and pretty much founded the ##windows channel
 
 The nick mota is atom spelled it backwards.  Someone else his old "quux" nick now.
 
+## CptLuxx (CET)
+
 ## blkshp (Greenwich or BST)
 
 ## Brimstar (Eastern)
