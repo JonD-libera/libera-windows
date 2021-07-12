@@ -1,15 +1,15 @@
 # Channel Norms
 Primarily the channel exists to discuss all supported versions of Windows (the family of Operating Systems from Redmond). This breaks down into three major areas: 1) helping people who have questions, 2) discussing the finer technical points, and 3) comparing Windows to other operating systems. But of course, when you get any group of people together, they'll often chat about all sorts of things. The channel ..
 
-* ... is mostly about Windows.
+* Is mostly about Windows.
 
-* ... is usually in English, because most tech folks seem to speak that language. Other languages are OK, though.
+* Is usually in English, because most tech folks seem to speak that language. Other languages are OK, though.
 
-* ... programming questions should be directed towards development channels such as  ##windows-coding, ##XAML, #win32 or #winapi, or a channel specific to your programming language. If you’re looking for a more appropriate channel you can use freenode's "alis" tool, with the command /msg alis help or check out this regularly updated freenode channel search tool. 
+* Programming questions should be directed towards development channels such as  ##windows-coding, ##XAML, #win32 or #winapi, or a channel specific to your programming language. If you’re looking for a more appropriate channel you can use freenode's "alis" tool, with the command /msg alis help or check out this regularly updated freenode channel search tool. 
 
-* ...doesn't mind the inevitable ’why I do/don’t like Windows’ discussions as long as they are easygoing, non-abusive, factually substantive, and reasonable. We're more than happy to compare and contrast operating systems. But if you've joined the channel for a debate, we hope you'll take a moment to read these debate guidelines.
+* Doesn't mind the inevitable ’why I do/don’t like Windows’ discussions as long as they are easygoing, non-abusive, factually substantive, and reasonable. We're more than happy to compare and contrast operating systems. But if you've joined the channel for a debate, we hope you'll take a moment to read these debate guidelines.
 
-* ... heavily discourages all talk relating to software piracy. (See this page if you need more explanation.)
+* Heavily discourages all talk relating to software piracy. (See this page if you need more explanation.)
 
 Discourages the use of Dual Boot for reasons explained here Multi-boot
 
