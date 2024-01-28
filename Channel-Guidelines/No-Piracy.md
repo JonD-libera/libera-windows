@@ -12,7 +12,7 @@ We will not:
 
 We're not the Piracy Police and we don't actually care very much about how you obtain the software you use in your private life. That's your business and we're not here to meddle in it. However, we want to avoid all piracy-related talk in our channels, for multiple reasons: 
 
-We're a channel on the freenode IRC network, which declares warez offtopic. Additionally, freenode discourages unlawful activities. We are in freenode's "house" and we believe that polite guests follow the house rules. We want to be polite guests. See Freenode.net's policies
+We're a channel on the Libera.Chat IRC network, which declares warez offtopic. Additionally, libera discourages unlawful activities. We are in libera's "house" and we believe that polite guests follow the house rules. We want to be polite guests. See Libera.Chat's [policies](https://libera.chat/policies/).
 
 Our channel operators actually do believe in abiding by the agreements under which any given software package is released.
 
@@ -22,7 +22,7 @@ We simply do not need the attention (from lawyers, reporters and the like) we mi
 
 We are aware that piracy poses a strong risk of malware exposure especially around 'activators and 'loaders'.
 
-Allowing discussion of piracy to take place ultimately puts the channel and freenode as a whole at some level of risk. This may be a small amount of risk, but we don't believe it's worth any risk when it's so easy to prevent.
+Allowing discussion of piracy to take place ultimately puts the channel and libera as a whole at some level of risk. This may be a small amount of risk, but we don't believe it's worth any risk when it's so easy to prevent.
 
 We understand that there are many different opinions about piracy, copyrights and software licensing. We respect this diversity of opinion, but we stress that our channels are about the software, not the licensing terms. So we don't really care to have long arguments about whether piracy is right or wrong, or what you can get away with. These are questions each person must answer for himself. We'd prefer to simply not discuss it at all.
 
